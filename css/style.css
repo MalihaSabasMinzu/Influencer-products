@@ -4,6 +4,8 @@
 /* =========common styles=========== */
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 button {
   background-color: #e02c6d;
@@ -17,6 +19,7 @@ button {
 }
 button:hover {
   background-color: #ff005d;
+  cursor: pointer;
 }
 button:active {
   background-color: #000000;
@@ -74,4 +77,24 @@ h4 {
 }
 .card > p {
   color: #787885;
+}
+#see-more-btn {
+  color: #e02c6dde;
+  background-color: transparent;
+  margin-left: 82%;
+  margin-top: 50px;
+}
+.fab {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.fab:hover {
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  background-color: #0a0826;
+  color: white;
+  padding: 40px;
+  margin-top: 50px;
 }
