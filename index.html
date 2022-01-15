@@ -6,17 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Influencer products</title>
+  <!-- external css -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha383-DyZ88mC6Up2uqS3h/KRgHuoeGwBcD3Ng9SiP3dIRy0EXTlnuz37vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
 
 <body>
+  <!-- header -->
   <header>
-    <nav></nav>
+    <h3>Influencer products</h3>
+    <nav>
+      <li><a href="">Home</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Sign in</a></li>
+      <li><a href="">Sign up</a></li>
+      <li><a href=""><i class="fas fa-search"></i></a></li>
+      <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+    </nav>
   </header>
+  <!-- main start -->
   <main>
-    <section id="main-header" class="flex">
+    <!-- first part -->
+    <section id="main-header">
       <div id="main-header-text">
         <h1>
           Start your Journey as <br />
@@ -31,10 +44,12 @@
         </button>
       </div>
       <div id="main-header-image">
-        <img src="images/main-camera.png" alt="camera" />
+        <img id="main-cam" src="images/main-camera.png" alt="camera" />
       </div>
     </section>
+    <!-- second part -->
     <section style="margin-top: 70px;">
+      <h2 style="text-align: center;margin-top: 40px; margin-bottom: 50px;">Popular Collection</h2>
       <div id="collection">
         <div class="card">
           <img src="images/tripod.png" alt="tripod" />
@@ -163,12 +178,29 @@
           </p>
         </div>
       </div>
-      <button id="see-more-btn">See More <i class="fas fa-arrow-right"></i></button>
+     <div> <button id="see-more-btn">See More <i class="fas fa-arrow-right"></i></button></div>
+    </section>
+    <!-- third part -->
+    <section>
+      <div id="contact-part">
+        <h1 class="red">Contact us</h1>
+        <form>
+          <input type="email" placeholder="Your Email" />
+          <textarea
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write us someting"
+          ></textarea>
+        </form>
+      </div>
+    </main>
     </section>
   </main>
+  <!-- Footer -->
   <footer>
     <h1>Influencer products</h1>
-    <p><small> Copyright © 2020  influencer products</small></p>
+    <p><small> Copyright &#169;	 2020  influencer products</small></p>
     <p><small> All rights reserved</small></p>
     <div><i class="fab fa-instagram"></i><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-youtube"></i></div>
   </footer>

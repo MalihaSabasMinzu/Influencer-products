@@ -31,11 +31,37 @@ h4 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.flex {
+
+/* ----nav bar----- */
+header {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 100px;
 }
+header h3 {
+  margin: 0;
+}
+nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+nav li {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: bold;
+}
+
 /* -----main header----- */
 #main-header {
+  display: flex;
   margin-top: 80px;
   margin-left: 100px;
   margin-right: 100px;
@@ -47,6 +73,13 @@ h4 {
 #main-header-text h1 {
   font-size: 52px;
   line-height: 70px;
+}
+#main-cam {
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+#main-cam:hover {
+  transform: scale(1.1);
 }
 #main-header-text p {
   font-size: 16px;
@@ -64,6 +97,7 @@ h4 {
   border-radius: 41px;
 }
 
+/* -----collection part----- */
 #collection {
   display: grid;
   grid-template-columns: repeat(3, 329px);
@@ -84,6 +118,38 @@ h4 {
   margin-left: 82%;
   margin-top: 50px;
 }
+/*------ contact part------ */
+#contact-part {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  color: white;
+  background-color: #e02c6dde;
+  text-align: center;
+  border-radius: 20px;
+}
+form {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  height: 30px;
+  margin-bottom: 5px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+textarea {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* ----footer---- */
 .fab {
   margin-left: 5px;
   margin-right: 5px;
@@ -97,4 +163,115 @@ footer {
   color: white;
   padding: 40px;
   margin-top: 50px;
+}
+
+/* =================
+     Media Queries
+  ================= */
+
+@media (min-width: 720px) and (max-width: 1100px) {
+  #main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  form {
+    width: auto;
+  }
+  #main-header-text {
+    margin-top: 00px;
+    margin-right: 0px;
+  }
+  #collection {
+    display: grid;
+    grid-template-columns: repeat(2, 329px);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 720px) {
+  nav {
+    display: none;
+  }
+  header h3 {
+    text-align: center;
+  }
+  header {
+    padding: 0;
+    display: block;
+  }
+  #main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  form {
+    width: auto;
+  }
+  #contact-part {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #main-header-text {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  #collection {
+    display: grid;
+    grid-template-columns: repeat(1, 329px);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  #see-more-btn {
+    margin-left: 72%;
+  }
+}
+@media (max-width: 399px) {
+  nav {
+    display: none;
+  }
+  #see-more-btn {
+    margin-left: 60%;
+  }
+  #main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #main-header-image {
+    width: 100vw;
+    height: auto;
+  }
+  form {
+    width: auto;
+  }
+  #main-cam {
+    width: 80vw;
+  }
+  #main-header-text {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  #collection {
+    display: grid;
+    grid-template-columns: repeat(1, 329px);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  #contact-part {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
