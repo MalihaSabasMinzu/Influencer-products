@@ -87,7 +87,7 @@ nav li a {
   margin-top: -30px;
 }
 #main-header-image {
-  background-image: url(/images/Circle\ design.svg);
+  background-image: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 440px;
